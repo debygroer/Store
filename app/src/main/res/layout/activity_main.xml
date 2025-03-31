@@ -8,14 +8,14 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btGame"
+        android:id="@+id/btCatalog"
         android:layout_width="162dp"
         android:layout_height="103dp"
-        android:text="Game"
+        android:text="Catalog"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btsetting"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btsetting"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.261" />
 
@@ -25,9 +25,9 @@
         android:layout_height="103dp"
         android:text="Setting"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btInstructions"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btInstructions"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.561" />
 

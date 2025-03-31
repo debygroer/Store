@@ -1,15 +1,12 @@
 package com.example.store;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -20,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btGame = findViewById(R.id.btGame);
+        btGame = findViewById(R.id.btCatalog);
         btSetting = findViewById(R.id.btsetting);
         btInstructions = findViewById(R.id.btInstructions);
         btGame.setOnClickListener(this);
@@ -31,9 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Toast.makeText(this, "on click", Toast.LENGTH_SHORT).show();
-        if(view.getId() == R.id.btGame)
+        if(view.getId() == R.id.btCatalog)
         {
             Toast.makeText(this, "Game", Toast.LENGTH_SHORT).show();
+            Intent catalog = new Intent(this, CatalogActivity.class);
+            startActivity(catalog);
         }
         if(view.getId() == R.id.btsetting)
         {

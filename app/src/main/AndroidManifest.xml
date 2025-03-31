@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Store"
         tools:targetApi="31">
+
+        <activity android:name=".CatalogActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
